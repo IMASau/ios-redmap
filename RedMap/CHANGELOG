@@ -1,0 +1,87 @@
+CHANGE LOG
+
+0.2.9
+-----
+* Fixed a layout issue on the spotting listing
+* Disabled TestFlight tracking
+* Delay initial downloading of media files
+
+0.2.8
+-----
+* Requires the user to confirm the acquired location for the sighting to be submitted
+
+0.2.7
+-----
+* Releasing as non-beta app
+* All images and distribution maps are now being pre-loaded upon the very first app launch (about 15mb)
+* Fixes when syncing user sightings updates
+* Minor bug fixes
+
+0.2.6
+-----
+* Other species requires at least one of the names filled in
+* Minor text amends throughout the app
+* Added Ionata and Holly Webber credit to Info screen
+* My Redmap now does not load unless the user is logged in
+
+0.2.5
+-----
+* User logout removes all sightings. Offline sightings will remain intact
+* Minor text amends throughout the app
+* Added note to comment field when logging a sighting
+* Species detail view layout update
+* Sighting photo view layout and text updates
+* Map view zooms to show all sighting instead of the latest one
+* Logging habitat set to default to Unknown (if available)
+* Logging time set to default to Not sure
+* Location service is stopped right after location is acquired
+* Logging coment field has disclamer text
+
+0.2.4
+-----
+* Reverting back the indication on mandatory fields when logging form is initially shown
+* Not validated sighting strip is moved to the photo view overlay and removed from the listing
+
+0.2.3
+-----
+* Time is no longer set by default - the user has to select a value
+* Removed indication on mandatory fields when logging form is initially shown
+* Display the Photos Library instead of the Camera Roll, which displays the most recent photos by default
+* Text changes to How are you helping and Info screens
+* Properly handle the facebook page link
+* Require log out confirmation
+* Added Log it section to the species detail view
+* Now syncing user's old sightings when he/she logs in
+* Added share button to photo view when a sighting is published live
+
+0.2.2
+-----
+* Fixed regions not listing when signing up for a new Redmap account
+
+0.2.1
+-----
+* Fixed a bug, causing the app to crash if specific steps were taken
+
+0.2.0
+-----
+* Have to delete/uninstall the old beta app and install the new one freshly
+* Optimized the whole logging screen
+* Done changed to Close on the photo details view
+* Text overlay kept on photo detail, unless user taps to hide
+* Added text to index view of photos - Common name, latin name and date of sighting
+* Plus icon re-appears when the user deletes the photo
+* Added indication on mandatory fields on logging form
+* Updated log form to show accurate to XXm instead of acquired @ XXm
+* Region automatically determined upon spotting or logging views open
+* Updated links for Info and How you are helping views to staging site
+* Removed splash screen view when tapping on the redmap logo
+* Removed alert on external links on Info and How you are helping views
+* Applied text changes on How you are helping view
+* Categories and Species can be filtered by Region (automatically detected and set)
+* Personal tab now reads My Redmap
+* Added other species view - a plus button when going through the logging view
+* Location view now has a Refresh button to locate the user after initial setup
+
+0.1.0
+-----
+* First beta

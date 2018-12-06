@@ -1,0 +1,209 @@
+<!doctype html>
+<html class="no-js" lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Info</title>
+<style>
+    /*
+    @font-face {
+        font-family: AlphaMacAOE;
+        src: url('AlphaMacAOE.ttf');
+        font-weight: normal;
+    }
+     */
+    
+    * {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none; /* Disable selection/Copy of UIWebView */
+    }
+    
+    body {
+        font: 15px/1.2 Helvetica, Arial, sans-serif;
+        background-color: #242760;
+        margin: 1em;
+        background-image: url('helping-background@2x.jpg');
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: 100% 100%;
+    }
+    
+    body > p, body > p a {
+        color: white;
+    }
+    
+    p.header {
+        padding: .5em;
+        margin: 0;
+        background-color: #959595;
+        text-shadow: 0 1px 1px rgba(0,0,0,.75);
+        color: white;
+        margin-top: 1.5em;
+    }
+    
+    ul {
+        background-color: #ededea;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    
+    li {
+        border-bottom: 1px dashed #959595;
+    }
+    
+    li:last-child {
+        border-bottom: none;
+    }
+    
+    li a {
+        padding: 10px 24px 10px 10px;
+        text-decoration: none;
+        display: block;
+        color: #959595;
+        background-size: 100% 100%;
+        position: relative;
+        min-height: 24px;
+    }
+    
+    li a:after {
+        content: '';
+        background-image: url('uitableviewcell-disclosure-safari@2x.png');
+        background-position: 50% 50%;
+        background-size: 16px 16px;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 16px;
+        right: 8px;
+        top: 0;
+        height: 100%;
+    }
+    
+    li a[href^="mailto:"]:after {
+        background-image: url('uitableviewcell-disclosure-mail@2x.png');
+        background-size: 16px 12px;
+    }
+    
+    li a img + h3, li a img + p {
+        padding-left: 60px;
+    }
+    
+    li a h3 {
+        color: black;
+        font-size: 1em;
+        margin: .4em 0;
+    }
+    
+    li a p {
+        margin: 0;
+    }
+    
+    li img {
+        float: left;
+    }
+    
+    li.divider h3 {
+        margin: 0;
+        padding: 3px 5px;
+        background-color: #959595;
+        color: white;
+        text-shadow: 0 1px 1px rgba(0,0,0,.7);
+        font-size: .9em;
+    }
+    
+    li a.touch/*, li a:hover*/ {
+        color: white;
+        background-image: url('uitableviewcell-background-hl.png');
+    }
+    
+    li a.touch h3/*, li a:hover h3*/ {
+        color: white;
+    }
+    
+    li a.touch:after/*, li a:hover:after*/ {
+        background-image: url('uitableviewcell-disclosure-safari-hl@2x.png');
+    }
+    
+    li a[href^="mailto:"].touch:after/*, li a[href^="mailto:"]:hover:after*/ {
+        background-image: url('uitableviewcell-disclosure-mail-hl@2x.png');
+    }
+    
+    .disclaimer {
+        font-size: .7em;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <p>This Range Extension Database and Mapping project, known as Redmap, captures information that will help scientists assess how our marine ecosystems may be changing as our oceans warm.</p>
+    <p>Redmap invites you the fishers, divers and scientists of Australia to Spot, Log and Map marine species that are unusual or uncommon in particular areas along our coasts. The logging process is now streamlined with the release of the Redmap App, specifically designed to enable you to log your unusual sighting anywhere.</p>
+    
+    <p class="header">Visit the website and check out all the sightings in your area and across Australia and to see our latest news and fantastic resources here:</p>
+    <ul>
+        <li><a href="{{REDMAP_URL}}"><h3>{{API_BASE}}</h3></a></li>
+        <li><a href="mailto:enquiries@redmap.org.au"><h3>or contact the Redmap team at via email</h3></a></li>
+    </ul>
+    
+    <p class="header">The development of this phone application was made possible through the support of our sponsors and a generous grant from:</p>
+    <ul>
+        <li><a href="http://www.innovation.gov.au/Science/InspiringAustralia/Pages/default.aspx"><img src="logo-ia@2x.png" width="50" height="27" /><h3>Inspiring Australia</h3></a></li>
+        <li><a href="http://www.environment.nsw.gov.au/grants/envtrust.htm"><img src="logo-new-env-trust@2x.png" width="50" height="19" /><h3>NSW Environment Trust</h3></a></li>
+    </ul>
+    
+    <p class="header">Redmap Australia is supported by:</p>
+    <ul>
+        <li><a href="http://www.imas.utas.edu.au/"><img src="logo-imas@2x.png" width="50" height="18" /><h3>IMAS: the Institute for Marine and Antarctic Studies is the national host of Redmap</h3></a></li>
+        
+        <li class="divider"><h3>National funders</h3></li>
+        <li><a href="http://www.innovation.gov.au/Science/InspiringAustralia/Pages/default.aspx"><img src="logo-ia@2x.png" width="50" height="27" /><h3>Inspiring Australia</h3></a></li>
+        <li><a href="http://www.ands.org.au/"><img src="logo-ands@2x.png" width="50" height="24" /><h3>Australian National Data Service</h3></a></li>
+        <li><a href="http://www.daff.gov.au/"><img src="logo-daff@2x.png" width="50" height="38" /><h3>Department of Agriculture, Fisheries and Forestry</h3></a></li>
+        
+        <li class="divider"><h3>Tasmania</h3></li>
+        <li><a href="http://www.utas.edu.au/"><img src="logo-utas@2x.png" width="26" height="30" /><h3>University of Tasmania</h3></a></li>
+        
+        <li class="divider"><h3>New South Wales</h3></li>
+        <li><a href="http://www.newcastle.edu.au/"><img src="logo-nsw@2x.png" width="50" height="50" /><h3 style="line-height:2.5em">University of Newcastle</h3></a></li>
+        
+        <li class="divider"><h3>Western Australia</h3></li>
+        <li><a href="http://www.fish.wa.gov.au/Pages/Home.aspx"><img src="logo-dof@2x.png" width="50" height="10" style="margin-top:15px;" /><h3>Department of Fisheries WA</h3></a></li>
+        
+        <li class="divider"><h3>South Australia</h3></li>
+        <li><a href="http://www.pir.sa.gov.au/"><img src="logo-pirsa@2x.png" width="45" height="48" /><h3>Department of Primary Industries and Regions SA</h3></a></li>
+        <li><a href="http://www.adelaide.edu.au/"><img src="logo-uoa@2x.png" width="39" height="30" /><h3>University of Adelaide</h3></a></li>
+        
+        <li class="divider"><h3>Queensland</h3></li>
+        <li><a href="http://www.jcu.edu.au/"><img src="logo-jcu@2x.png" width="50" height="23" /><h3>James Cook University</h3></a></li>
+        
+        <li class="divider"><h3>Victoria</h3></li>
+        <li><a href="http://museumvictoria.com.au/"><img src="logo-mv@2x.png" width="50" height="25" /><h3>Museum Victoria</h3></a></li>
+    </ul>
+    
+    <p class="header">App development and design</p>
+    <ul>
+        <li><a href="http://www.ionata.com.au/"><img src="logo-ionata@2x.png" width="50" height="22" /><h3>Ionata Web Solutions</h3></a></li>
+        <li><a href="http://hollywebber.com.au/"><img src="logo-holly@2x.png" width="50" height="14" /><h3>Holly Webber</h3></a></li>
+    </ul>
+    
+    <p class="disclaimer"><a href="{{REDMAP_URL}}misc/footer-links/legals/">Disclaimer</a></p>
+    
+    <script>
+        var handleStart, handleEnd, links = document.querySelectorAll('a');
+        for (var i = 0, maxI = links.length; i < maxI; i++) {
+            (function(){
+             var el = links[i];
+             el.addEventListener('touchstart',  function(ev) { handleStart.call(el); }, false);
+             el.addEventListener('touchend',    function(ev) { handleEnd.call(el); }, false);
+             el.addEventListener('touchcancel', function(ev) { handleEnd.call(el); }, false);
+             el.addEventListener('touchleave',  function(ev) { handleEnd.call(el); }, false);
+             })();
+        }
+        handleStart = function() {
+            this.className = 'touch';
+        };
+        handleEnd = function() {
+            this.className = '';
+        };
+    </script>
+</body>
+</html>

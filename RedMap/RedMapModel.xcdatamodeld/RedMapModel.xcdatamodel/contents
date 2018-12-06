@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Category" representedClassName="Category" syncable="YES">
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="Integer 16" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="longDesc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pictureUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <relationship name="regions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Region" inverseName="categoryList" inverseEntity="Region" syncable="YES"/>
+        <relationship name="species" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Species" inverseName="categoryList" inverseEntity="Species" syncable="YES"/>
+        <relationship name="spottingList" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Spotting" inverseName="category" inverseEntity="Spotting" syncable="YES"/>
+    </entity>
+    <entity name="Region" representedClassName="Region" syncable="YES">
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="Integer 16" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="sightingsUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="slug" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <relationship name="categoryList" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Category" inverseName="regions" inverseEntity="Category" syncable="YES"/>
+    </entity>
+    <entity name="Species" representedClassName="Species" syncable="YES">
+        <attribute name="commonName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="distributionUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="Integer 16" indexed="YES" syncable="YES"/>
+        <attribute name="imageCredit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pictureUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="section" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="shortDesc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sightingsUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="speciesName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updateTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <relationship name="categoryList" toMany="YES" minCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="species" inverseEntity="Category" syncable="YES"/>
+        <relationship name="spottingList" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Spotting" inverseName="species" inverseEntity="Spotting" syncable="YES"/>
+    </entity>
+    <entity name="Spotting" representedClassName="Spotting" syncable="YES">
+        <attribute name="activity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateModified" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateSpotted" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="depth" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="locationAccuracy" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="locationLat" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="locationLng" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="locationStatus" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="otherSpecies" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photosCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="speciesCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="speciesHabitat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="speciesLength" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="speciesLengthEstimated" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="speciesSex" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="speciesWeight" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="speciesWeightEstimated" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" attributeType="Integer 16" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="timeNotSure" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="uuid" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="waterTemperature" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="category" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="spottingList" inverseEntity="Category" syncable="YES"/>
+        <relationship name="species" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Species" inverseName="spottingList" inverseEntity="Species" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="authToken" optional="YES" attributeType="String" minValueString="40" maxValueString="40" regularExpressionString="[a-z0-9]+" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateModified" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" minValueString="5" regularExpressionString="^[^@]{2,}@[^@]{2,}$" syncable="YES"/>
+        <attribute name="facebookID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="joinMailingList" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" minValueString="6" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" minValueString="3" maxValueString="30" regularExpressionString="[a-zA-Z0-9@.+_-]+" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Category" positionX="-648" positionY="324" width="137" height="165"/>
+        <element name="Region" positionX="-864" positionY="324" width="128" height="135"/>
+        <element name="Species" positionX="-432" positionY="324" width="128" height="255"/>
+        <element name="Spotting" positionX="133" positionY="459" width="128" height="450"/>
+        <element name="User" positionX="-18" positionY="459" width="128" height="240"/>
+    </elements>
+</model>

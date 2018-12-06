@@ -1,0 +1,247 @@
+<!doctype html>
+<html class="no-js" lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How can you help?</title>
+<style>
+    /*
+    @font-face {
+        font-family: AlphaMacAOE;
+        src: url('AlphaMacAOE.ttf');
+        font-weight: normal;
+    }
+     */
+    
+    * {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none; /* Disable selection/Copy of UIWebView */
+    }
+    
+    a {
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+    
+    body {
+        font: 15px/1.2 Helvetica, Arial, sans-serif;
+        background-color: #242760;
+        padding: 1em 1em;
+        background-image: url('helping-background@2x.jpg');
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        margin: 0;
+        background-size: 100% 100%;
+    }
+    
+    body > p {
+        color: white;
+        text-align: center;
+        padding: 0 1em;
+    }
+    
+    h2, h3 {
+        font-weight: normal;
+        margin: 0;
+    }
+    
+    i {
+        display: block;
+        background-size: 100% 100%;
+    }
+    
+    h2 {
+        background-color: #ee2e24;
+        color: white;
+        padding: 5px 20px 10px 40px;
+        display: block;
+        font-family: AlphaMacAOE, "AlphaMack AOE";
+        font-size: 35px;
+        position: absolute;
+        line-height: 1;
+        margin-left: 10px;
+    }
+    
+    h2 i {
+        background-image: url('paperclip@2x.png');
+        width: 17px;
+        height: 32px;
+        position: absolute;
+        left: 10px;
+        top: -6px;
+    }
+    
+    ul {
+        background-color: #ededea;
+        padding: 40px 0 0;
+        margin: 30px 0 0;
+        list-style: none;
+    }
+
+    li {
+        border-bottom: 1px dashed #959595;
+    }
+    
+    li:last-child {
+        border-bottom: none;
+    }
+    
+    li a {
+        padding: 10px 10px;
+        text-decoration: none;
+        display: block;
+        color: #959595;
+        background-size: 100% 100%;
+    }
+    
+    li h3, li p {
+        padding-left: 60px;
+    }
+
+    li h3 {
+        font-family: AlphaMacAOE, "AlphaMack AOE";
+        font-size: 28px;
+    }
+    
+    li p {
+        margin: 0;
+    }
+    
+    li i {
+        float: left;
+    }
+    
+    li.facebook i {
+        background-image: url('helping-icon-facebook@2x.png');
+        width: 51px;
+        height: 31px;
+    }
+    li.facebook h3 {
+        color: #c9252b;
+    }
+    
+    li.explore i {
+        background-image: url('helping-icon-explore@2x.png');
+        width: 45px;
+        height: 44px;
+    }
+    li.explore h3 {
+        color: #082c5d;
+    }
+    
+	li.log i {
+	    background-image: url('helping-icon-log@2x.png');
+	    width: 44px;
+	    height: 43px;
+	}
+	li.log h3 {
+	    color: #c9252b;
+	}
+    
+    li.info i {
+	    background-image: url('helping-icon-info@2x.png');
+	    width: 43px;
+	    height: 43px;
+	}
+	li.info h3 {
+	    color: #257abc;
+	}
+    
+    li.signup i {
+	    background-image: url('helping-icon-signup@2x.png');
+	    width: 43px;
+	    height: 43px;
+	}
+	li.signup h3 {
+	    color: #082c5d;
+	}
+
+    li.contact i {
+	    background-image: url('helping-icon-contact@2x.png');
+	    width: 46px;
+	    height: 35px;
+	}
+	li.contact h3 {
+	    color: #c9252b;
+	}
+    
+    li a.touch {
+        color: white;
+        background-image: url('uitableviewcell-background-hl.png');
+    }
+    
+    li a.touch h3 {
+        color: white;
+    }
+
+    </style>
+</head>
+<body>
+    <p>There is evidence to suggest climate change is affecting our marine environments and the species within it. If you have just spotted a new or unusual species in your favourite waterhole you are not alone. Join Redmap in helping to record and track this pattern of species movement.</p>
+    
+    <h2><i></i>How can you help?</h2>
+    
+    <ul>
+        <li class="facebook">
+            <a href="http://www.facebook.com/RedmapAustralia">
+                <i></i>
+                <h3>Join us on Facebook</h3>
+                <p>Tell your friends</p>
+            </a>
+        </li>
+        <li class="explore">
+            <a href="redmap://spot">
+                <i></i>
+                <h3>Explore all the species</h3>
+                <p>Learning the names and features of the Redmap species will help you identify them!</p>
+            </a>
+        </li>
+        <li class="log">
+            <a href="redmap://log">
+                <i></i>
+                <h3>Log your sightings</h3>
+                <p>Scientists use your observations to help them understand what changes are occurring in the marine environment.</p>
+            </a>
+        </li>
+        <li class="info">
+            <a href="{{REDMAP_URL}}resources/all/">
+                <i></i>
+                <h3>Latest information</h3>
+                <p>What is climate change and what is it doing to the ocean?</p>
+            </a>
+        </li>
+        <li class="signup">
+            <a href="{{REDMAP_URL}}newsletter/">
+            <i></i>
+                <h3>Sign up for our newsletter</h3>
+                <p>This way you are always up to date with how things are changing.</p>
+            </a>
+        </li>
+        <li class="contact">
+            <a href="{{REDMAP_URL}}about/contact-us/">
+                <i></i>
+                <h3>Contact us</h3>
+                <p>You can help us by handing out Redmap brochures in your area or giving a talk on Redmap to your community.</p>
+            </a>
+        </li>
+    </ul>
+    
+    <script>
+        var handleStart, handleEnd, links = document.querySelectorAll('a');
+        for (var i = 0, maxI = links.length; i < maxI; i++) {
+            (function(){
+                var el = links[i];
+                el.addEventListener('touchstart',  function(ev) { handleStart.call(el); }, false);
+                el.addEventListener('touchend',    function(ev) { handleEnd.call(el); }, false);
+                el.addEventListener('touchcancel', function(ev) { handleEnd.call(el); }, false);
+                el.addEventListener('touchleave',  function(ev) { handleEnd.call(el); }, false);
+            })();
+        }
+        handleStart = function() {
+            this.className = 'touch';
+        };
+        handleEnd = function() {
+            this.className = '';
+        };
+    </script>
+</body>
+</html>

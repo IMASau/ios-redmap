@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Title</key>
+			<string>Default State</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<string>Autodetect</string>
+			<key>Key</key>
+			<string>region</string>
+			<key>Title</key>
+			<string>Region</string>
+			<key>Titles</key>
+			<array>
+				<string>Autodetect</string>
+				<string>New South Wales</string>
+				<string>Victoria</string>
+				<string>Queensland</string>
+				<string>South Australia</string>
+				<string>Western Australia</string>
+				<string>Tasmania</string>
+			</array>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Values</key>
+			<array>
+				<string>Autodetect</string>
+				<string>New South Wales</string>
+				<string>Victoria</string>
+				<string>Queensland</string>
+				<string>South Australia</string>
+				<string>Western Australia</string>
+				<string>Tasmania</string>
+			</array>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>DONT_TOUCH_THIS_FOOTER</string>
+			<key>Title</key>
+			<string>Don't touch this!</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<false/>
+			<key>Key</key>
+			<string>loggingEnabled</string>
+			<key>Title</key>
+			<string>Create service log</string>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>About</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<string>1.0.7 (7536)</string>
+			<key>Key</key>
+			<string>version</string>
+			<key>Title</key>
+			<string>Version</string>
+			<key>Type</key>
+			<string>PSTitleValueSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>Acknowledgements</string>
+			<key>Title</key>
+			<string>Acknowledgements</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+	</array>
+	<key>StringsTable</key>
+	<string>Root</string>
+</dict>
+</plist>

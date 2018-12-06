@@ -1,0 +1,59 @@
+PODS:
+  - CocoaLumberjack (1.8.1):
+    - CocoaLumberjack/Extensions (= 1.8.1)
+  - CocoaLumberjack/Core (1.8.1)
+  - CocoaLumberjack/Extensions (1.8.1):
+    - CocoaLumberjack/Core
+  - Google/Analytics (1.2.1):
+    - Google/Core
+    - GoogleAnalytics (~> 3.12)
+  - Google/Core (1.2.1):
+    - GoogleInterchangeUtilities (~> 1.0)
+    - GoogleNetworkingUtilities (~> 1.0)
+    - GoogleSymbolUtilities (~> 1.0)
+    - GoogleUtilities (~> 1.1)
+  - GoogleAnalytics (3.14.0)
+  - GoogleInterchangeUtilities (1.1.0):
+    - GoogleSymbolUtilities (~> 1.0)
+  - GoogleNetworkingUtilities (1.0.0):
+    - GoogleSymbolUtilities (~> 1.0)
+  - GoogleSymbolUtilities (1.0.3)
+  - GoogleUtilities (1.1.0):
+    - GoogleSymbolUtilities (~> 1.0.0)
+  - GRMustache (7.3.2):
+    - JRSwizzle (~> 1.0)
+  - JRSwizzle (1.0)
+  - MKNetworkKit (0.87):
+    - Reachability (~> 3.1.0)
+  - PonyDebugger (0.4.5):
+    - SocketRocket
+  - Reachability (3.1.1)
+  - SocketRocket (0.4.2)
+  - zipzap (8.1)
+
+DEPENDENCIES:
+  - CocoaLumberjack (= 1.8.1)
+  - Google/Analytics
+  - GRMustache (= 7.3.2)
+  - MKNetworkKit (= 0.87)
+  - PonyDebugger (= 0.4.5)
+  - Reachability (= 3.1.1)
+  - zipzap (= 8.1)
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 555162681b9c20a271909b235c43f6bbd5d512e1
+  Google: fd33b5fa40fa3aaee5176de49c873a74e3d11dce
+  GoogleAnalytics: 9be1afdb8deeac4bb5f13ca7f7d3b9db2a1f43dc
+  GoogleInterchangeUtilities: d7f7174176fbcf9710f696f1acebad4dbd98ac03
+  GoogleNetworkingUtilities: 292992ab31b7b4ba32809a0e8b40e324cdfb2c0c
+  GoogleSymbolUtilities: 82ad9f93d3615244b3f4ce440f5ab2515e8b4f56
+  GoogleUtilities: 8ed9134debe11719097881711464752900668f10
+  GRMustache: ebe6104fd30a6d22c1f36af131e19e2dbf7cd292
+  JRSwizzle: dd5ead5d913a0f29e7f558200165849f006bb1e3
+  MKNetworkKit: 60ad3c83b62183e40ba75ce772c9427c25b520de
+  PonyDebugger: 1c60f7c876bdb6a8b6bf0f0269087f8a234fafa7
+  Reachability: dd9aa4fb6667b9f787690a74f53cb7634ce99893
+  SocketRocket: ffe08119b00ef982f6c37052a4705a057c8494ad
+  zipzap: c67fb8a1e1796430ee512b8379f8fd8b2a7e8913
+
+COCOAPODS: 0.39.0

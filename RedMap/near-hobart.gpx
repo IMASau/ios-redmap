@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gpx
+xmlns="http://www.topografix.com/GPX/1/1"
+xmlns:gpxx = "http://www.garmin.com/xmlschemas/GpxExtensions/v3"
+xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd
+http://www.garmin.com/xmlschemas/GpxExtensions/v3
+http://www8.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd"
+version="1.1"
+creator="gpx-poi.com">
+
+   <wpt lat="-43.259206" lon="147.691956">
+      <time>2013-05-13T06:10:32Z</time>
+      <extensions>
+         <gpxx:WaypointExtension>
+            <gpxx:Proximity>100</gpxx:Proximity>
+         </gpxx:WaypointExtension>
+      </extensions>
+   </wpt>
+
+</gpx>
