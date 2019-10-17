@@ -9,26 +9,9 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIcons</key>
-	<dict>
-		<key>CFBundlePrimaryIcon</key>
-		<dict>
-			<key>CFBundleIconFiles</key>
-			<array>
-				<string>Icon${REDMAP_ICON_NAME_SUFFIX}.png</string>
-				<string>Icon${REDMAP_ICON_NAME_SUFFIX}@2x.png</string>
-				<string>Icon${REDMAP_ICON_NAME_SUFFIX}-72.png</string>
-				<string>Icon${REDMAP_ICON_NAME_SUFFIX}-72@2x.png</string>
-				<string>Icon${REDMAP_ICON_NAME_SUFFIX}-Small-50.png</string>
-				<string>Icon${REDMAP_ICON_NAME_SUFFIX}-Small-50@2x.png</string>
-				<string>Icon${REDMAP_ICON_NAME_SUFFIX}-Small.png</string>
-				<string>Icon${REDMAP_ICON_NAME_SUFFIX}-Small@2x.png</string>
-				<string>Icon${REDMAP_ICON_NAME_SUFFIX}-120.png</string>
-				<string>Icon${REDMAP_ICON_NAME_SUFFIX}-80.png</string>
-			</array>
-			<key>UIPrerenderedIcon</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
+	<key>CFBundleIcons~ipad</key>
+	<dict/>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -42,7 +25,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>7536</string>
+	<string>7537</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
