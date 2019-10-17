@@ -66,7 +66,7 @@
 #endif
 
 #if TRACK
-    #define GA_TRACKING_ID @"UA-XXXXXXXX-X"
+    #define GA_TRACKING_ID @"UA-42681315-1"
 #endif
 
 ////////////////////////////////////////////////////////////////////////////////
