@@ -52,7 +52,7 @@
 #if USE_STAGING_SERVER
     #define FACEBOOK_APP_API_KEY @"POPULATE_THIS_WITH_YOUR_STAGE_API_KEY"                             // staging app
 #else
-    #define FACEBOOK_APP_API_KEY @"POPULATE_THIS_WITH_YOUR_LIVE_API_KEY"                             // live fb app
+    #define FACEBOOK_APP_API_KEY @"117379155094908"                             // live fb app
 #endif
 
 ////////////////////////////////////////////////////////////////////////////////
