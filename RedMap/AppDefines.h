@@ -38,14 +38,14 @@
         #define REDMAP_URL     @"http://redmap.stage.aki.ionata.com/"
         #define API_BASE       @"redmap.stage.aki.ionata.com"
     #else
-        #define REDMAP_URL     @"http://www.redmap.org.au/"
+        #define REDMAP_URL     @"https://www.redmap.org.au/"
         #define API_BASE       @"www.redmap.org.au"
     #endif
-    #define API_PORT           80
+    #define API_PORT           0
 #endif
 
 #define API_PATH @"api"
-#define USE_SSL 0
+#define USE_SSL 1
 
 ////////////////////////////////////////////////////////////////////////////////
 // Facebook login
