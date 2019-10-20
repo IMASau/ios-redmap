@@ -58,6 +58,8 @@
 	<string>To determine your Current Region we need to access your device's location services.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>$(PRODUCT_NAME) would like access to your photo gallery to pick a photo to include with your sighting.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>$(PRODUCT_NAME) would like use your camera to take a photo to include with your sighting.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>AlphaMacAOE.ttf</string>
